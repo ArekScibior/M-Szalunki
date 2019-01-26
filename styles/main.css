@@ -26,12 +26,11 @@ body {
 /*---------------------------------------------*/
 
 #home-page {
-    background: url('/images/background-home-page.png');
-    border: 1px black; /*do wykomentowania */
-    border-style: dashed; /*do wykomentowania */
+    background: url('/images/background-home-page2.png');
     height:780px;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0 5px 10px #313C48;
 }
 
 #home-page .header {
@@ -92,6 +91,7 @@ body {
 .container-home .content {
     background: #ffffff;
     width:100%;
+    box-shadow:inset 0px 5px 10px #313C48;
 }
 .container-home .content .container .main-slogan {
     display:inline-block;
@@ -126,9 +126,59 @@ body {
     transform: scale(1.2);
 }
 /*---------------------------------------------*/
-/* about */
+/* assortment */
 /*---------------------------------------------*/
 
-#about-us .row {
+#assortment-section {
     min-height: 500px;
+    margin-bottom: 40px;
+}
+
+.assortment-name {
+    border-bottom: 2px solid #2D3742;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.assortment-list {
+    margin-top:60px
+}
+
+
+.assortment-list .assortment-text {
+    font-size: 16px;
+    color: rgb(24, 30, 37);
+}
+
+.assortment-list .assortment-image img {
+    border-radius: 10px;
+    width: 100%;
+    height:auto;
+}
+
+/*---------------------------------------------*/
+/* price */
+/*---------------------------------------------*/
+.simple-hr {
+    border: 1px solid rgb(162, 164, 165);
+}
+#price-section {
+    min-height: 500px;
+    margin-bottom: 40px;
+}
+
+.price-name {
+    border-bottom: 2px solid #2D3742;
+    width: 250px;
+    margin-top: 50px;
+}
+.price-image {
+    padding-top: 50px;
+    padding-right:20px;
+    margin-right: 45px;
+}
+.price-image img {
+    border-radius: 10px;
+    width: 100%;
+    height:auto;
 }
