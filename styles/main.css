@@ -13,39 +13,27 @@
 
 body {
     font-family: 'Open Sans', sans;
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(228,228,228,1) 22%, rgba(133,133,133,1) 96%, rgba(84,84,84,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(1%, rgba(255,255,255,1)), color-stop(22%, rgba(228,228,228,1)), color-stop(96%, rgba(133,133,133,1)), color-stop(100%, rgba(84,84,84,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(228,228,228,1) 22%, rgba(133,133,133,1) 96%, rgba(84,84,84,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(228,228,228,1) 22%, rgba(133,133,133,1) 96%, rgba(84,84,84,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(228,228,228,1) 22%, rgba(133,133,133,1) 96%, rgba(84,84,84,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(228,228,228,1) 22%, rgba(133,133,133,1) 96%, rgba(84,84,84,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#545454', GradientType=0 );
 }
 
 .container {
     width: 920px;
     margin: 0 auto;
-    border: 1px black; /*do wykomentowania */
-    border-style: dashed; /*do wykomentowania */
-}
 
-/*---------------------------------------------*/
-/* sekcja header */
-/*---------------------------------------------*/
+}
 
 /*---------------------------------------------*/
 /* sekcja header */
 /*---------------------------------------------*/
 
 #home-page {
+    background: url('/images/background-home-page.png');
     border: 1px black; /*do wykomentowania */
     border-style: dashed; /*do wykomentowania */
     height:780px;
-    background: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 #home-page .header {
     height: 80px;
 }
@@ -53,13 +41,21 @@ body {
 #home-page .logo-text {
     float: left;
     height: 20px;
-    width: 100px;
+    width: 190px;
     line-height: 80px;
+    color: #fff;
+    font-size: 35px;
 }
 
 #home-page .logo-text a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
     display: inline-block;
     transition: all .4s ease-in-out;
+}
+#home-page .logo-text a:hover {
+    transform: scale(1.2);
 }
 
 #home-page .nav-main {
@@ -73,7 +69,7 @@ body {
     font-size: 14px;
     display: inline-block;
     text-decoration: none;
-    color: #000000;
+    color: #fff;
     line-height: 80px;
     padding-left: 25px;
     transition: all .4s ease-in-out
@@ -81,28 +77,58 @@ body {
 
 .nav-main a:hover {
     transform: scale(1.2);
-    text-decoration: #000000
+    text-decoration: #fff
 }
 
 /*---------------------------------------------*/
 /* content */
 /*---------------------------------------------*/
-
-.content .main-slogan {
+.container-home {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    align-items: center;
+}
+.container-home .content {
+    background: #ffffff;
+    width:100%;
+}
+.container-home .content .container .main-slogan {
     display:inline-block;
-    margin-top: 170px;
+    margin-top: 110px;
     margin-bottom: 20px;
     font-size: 45px;
     line-height: 60px;
     font-weight: 400;
     color: #000000;
-    
 }
 
-.content .second-slogan {
+.container-home .content .container .second-slogan {
     font-size: 24px;
     line-height: 60px;
     font-weight: 400;
     color: #000000;
     margin-bottom: 50px;
+}
+
+.container-home .content .container .checkItButton {
+    border:none;
+    margin-bottom: 75px;
+    padding: 10px;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    background: #3B5BB3;
+    color: #fff;
+    outline: none;
+    transition: all .4s ease-in-out;
+}
+.container-home .content .container .checkItButton:hover {
+    transform: scale(1.2);
+}
+/*---------------------------------------------*/
+/* about */
+/*---------------------------------------------*/
+
+#about-us .row {
+    min-height: 500px;
 }
