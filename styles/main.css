@@ -2,6 +2,7 @@
 /* my font */
 /*---------------------------------------------*/
 /*font-family: 'Open Sans', sans; */
+/*font-family: 'Cormorant', serif; */
 
 /*---------------------------------------------*/
 /* globalne */
@@ -94,6 +95,8 @@ body {
     box-shadow:inset 0px 5px 10px #313C48;
 }
 .container-home .content .container .main-slogan {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     display:inline-block;
     margin-top: 110px;
     margin-bottom: 20px;
@@ -104,6 +107,8 @@ body {
 }
 
 .container-home .content .container .second-slogan {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     font-size: 24px;
     line-height: 60px;
     font-weight: 400;
@@ -121,10 +126,12 @@ body {
     color: #fff;
     outline: none;
     transition: all .4s ease-in-out;
+    box-shadow: 5px 9px 9px 0px #313C48;
 }
 .container-home .content .container .checkItButton:hover {
     transform: scale(1.2);
 }
+
 /*---------------------------------------------*/
 /* assortment */
 /*---------------------------------------------*/
@@ -163,7 +170,7 @@ body {
     border: 1px solid rgb(162, 164, 165);
 }
 #price-section {
-    min-height: 500px;
+    min-height: 430px;
     margin-bottom: 40px;
 }
 
@@ -181,4 +188,32 @@ body {
     border-radius: 10px;
     width: 100%;
     height:auto;
+}
+
+/*---------------------------------------------*/
+/* contact */
+/*---------------------------------------------*/
+
+#contact-section {
+    min-height: 430px;
+    margin-bottom: 40px;
+}
+.contact-name {
+    border-bottom: 2px solid #2D3742;
+    width: 350px;
+    margin-top: 50px;
+}
+.contact-name-map {
+    border-bottom: 2px solid #2D3742;
+    width: 405px;
+    margin-top: 50px;
+}
+
+.name-director {
+    color: #2D3742;
+    font-weight: bold;
+}
+
+.contact-name-section a {
+    color: #2D3742;
 }
