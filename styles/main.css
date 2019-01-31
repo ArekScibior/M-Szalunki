@@ -29,6 +29,31 @@ body {
     margin-top: -200px;
 }
 
+.square {
+    width: 53px;
+    height: 170px;
+    /* background-image: linear-gradient(to right, #667eea, #764ba2); */
+    background: #4267B2;
+    position: fixed; 
+    top:150px;
+    right: -40px;
+    z-index:20;
+    border-bottom-left-radius:24px;
+    border-top-left-radius:24px;
+    border: 2px solid #fff;
+    transition: all .4s ease-in-out;
+}
+
+.square:hover {
+    right: 0px;
+}
+.square-text {
+    transform:rotate(90deg);
+    margin-top:60px;
+    margin-lefT:10px;
+    color:#fff;
+    font-weight: bold;
+}
 
 /*---------------------------------------------*/
 /* sekcja header */
@@ -38,7 +63,7 @@ body {
     border-bottom-right-radius: 200px;
     position: relative;
     z-index: 1;
-    height: 665px;
+    height: 600px;
     background-image: linear-gradient(to right, #29323c, #485563);
 }
 
@@ -86,7 +111,8 @@ body {
 
 .nav-main a:hover {
     transform: scale(1.2);
-    text-decoration: #fff
+    /* text-decoration: #fff; */
+    color: linear-gradient(to right, #667eea, #764ba2);
 }
 
 /*---------------------------------------------*/
@@ -96,11 +122,18 @@ body {
 .about-gradient {
     background-image: linear-gradient(to right, #fdfbfb, #ebedee);
     position: relative;
-    height: 800px;
+    height: 550px;
     border-bottom-right-radius: 200px;
     margin-top: -200px;
     z-index: 2;
 }
+
+.assortment-name {
+    border-bottom: 2px solid #2D3742;
+    width: 250px;
+    margin-top: 50px;
+}
+
 
 /*---------------------------------------------*/
 /* content */
