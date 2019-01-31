@@ -22,16 +22,24 @@ body {
 
 }
 
+.hr-gradient {
+    background-image: linear-gradient(to right, #667eea, #764ba2);
+    position: relative;
+    height: 510px;
+    margin-top: -200px;
+}
+
+
 /*---------------------------------------------*/
 /* sekcja header */
 /*---------------------------------------------*/
 
 #home-page {
-    background: url('/images/background-home-page2.png');
-    height:780px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 5px 10px #313C48;
+    border-bottom-right-radius: 200px;
+    position: relative;
+    z-index: 1;
+    height: 665px;
+    background-image: linear-gradient(to right, #29323c, #485563);
 }
 
 #home-page .header {
@@ -41,10 +49,11 @@ body {
 #home-page .logo-text {
     float: left;
     height: 20px;
-    width: 190px;
+    width: 200px;
     line-height: 80px;
     color: #fff;
     font-size: 35px;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
 #home-page .logo-text a {
@@ -81,6 +90,19 @@ body {
 }
 
 /*---------------------------------------------*/
+/* about */
+/*---------------------------------------------*/
+
+.about-gradient {
+    background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+    position: relative;
+    height: 800px;
+    border-bottom-right-radius: 200px;
+    margin-top: -200px;
+    z-index: 2;
+}
+
+/*---------------------------------------------*/
 /* content */
 /*---------------------------------------------*/
 .container-home {
@@ -89,12 +111,11 @@ body {
     display: flex;
     align-items: center;
 }
-.container-home .content {
-    background: #ffffff;
-    width:100%;
-    box-shadow:inset 0px 5px 10px #313C48;
+.container-home {
+    color: #fff;
 }
-.container-home .content .container .main-slogan {
+
+.main-slogan {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     display:inline-block;
@@ -103,32 +124,35 @@ body {
     font-size: 45px;
     line-height: 60px;
     font-weight: 400;
-    color: #000000;
+    color: #fff;
 }
 
-.container-home .content .container .second-slogan {
+.second-slogan {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 60px;
     font-weight: 400;
-    color: #000000;
+    color: #fff;
     margin-bottom: 50px;
 }
 
-.container-home .content .container .checkItButton {
+.checkItButton {
     border:none;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
+    margin-top: 20px;
     padding: 10px;
     border: 2px solid #dddddd;
     border-radius: 5px;
-    background: #3B5BB3;
+    background-image: linear-gradient(to right, #29323c, #485563);
     color: #fff;
     outline: none;
     transition: all .4s ease-in-out;
     box-shadow: 5px 9px 9px 0px #313C48;
+    width: 215px;
 }
-.container-home .content .container .checkItButton:hover {
+
+.checkItButton:hover {
     transform: scale(1.2);
 }
 
@@ -136,9 +160,13 @@ body {
 /* assortment */
 /*---------------------------------------------*/
 
-#assortment-section {
-    min-height: 500px;
-    margin-bottom: 40px;
+.assortment-gradient {
+    background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+    position: relative;
+    height: 800px;
+    border-bottom-right-radius: 200px;
+    margin-top: -195px;
+    z-index: 2;
 }
 
 .assortment-name {
@@ -166,12 +194,16 @@ body {
 /*---------------------------------------------*/
 /* price */
 /*---------------------------------------------*/
-.simple-hr {
-    border: 1px solid rgb(162, 164, 165);
-}
-#price-section {
-    min-height: 430px;
-    margin-bottom: 40px;
+
+.price-gradient {
+    background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+    position: relative;
+    height: 600px;
+    border-bottom-right-radius: 200px;
+    margin-top: -195px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
 .price-name {
@@ -194,10 +226,15 @@ body {
 /* contact */
 /*---------------------------------------------*/
 
-#contact-section {
-    min-height: 430px;
-    margin-bottom: 40px;
+.contact-gradient {
+    background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+    position: relative;
+    height: 735px;
+    border-bottom-right-radius: 200px;
+    margin-top: -195px;
+    z-index: 2;
 }
+
 .contact-name {
     border-bottom: 2px solid #2D3742;
     width: 350px;
@@ -216,4 +253,15 @@ body {
 
 .contact-name-section a {
     color: #2D3742;
+}
+
+/*---------------------------------------------*/
+/* footer */
+/*---------------------------------------------*/
+
+.footer-gradient {
+    background-image: linear-gradient(to right, #667eea, #764ba2);
+    position: relative;
+    height: 300px;
+    margin-top: -200px;
 }
