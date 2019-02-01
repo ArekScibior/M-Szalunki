@@ -55,6 +55,11 @@ body {
     font-weight: bold;
 }
 
+.square-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /*---------------------------------------------*/
 /* sekcja header */
 /*---------------------------------------------*/
@@ -238,8 +243,6 @@ body {
     border-bottom-right-radius: 200px;
     margin-top: -195px;
     z-index: 2;
-    display: flex;
-    align-items: center;
 }
 
 .price-name {
