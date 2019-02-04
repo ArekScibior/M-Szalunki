@@ -67,7 +67,7 @@ body {
 #home-page {
     border-bottom-right-radius: 200px;
     position: relative;
-    z-index: 1;
+    z-index: 22;
     height: 600px;
     /* background-image: linear-gradient(to right, #29323c, #485563); */
     background-image: linear-gradient(to right, #42275a, #734b6d);
@@ -76,6 +76,7 @@ body {
 
 #home-page .header {
     height: 80px;
+    color: #fff;
 }
 
 #home-page .logo-text {
@@ -104,7 +105,9 @@ body {
 }
 .nav-main li {
     display: inline-block;
+    color: #fff;
 }
+
 
 .nav-main a{
     font-size: 14px;
@@ -118,8 +121,6 @@ body {
 
 .nav-main a:hover {
     transform: scale(1.2);
-    /* text-decoration: #fff; */
-    color: linear-gradient(to right, #667eea, #764ba2);
 }
 
 /*---------------------------------------------*/
