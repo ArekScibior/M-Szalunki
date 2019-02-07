@@ -302,6 +302,6 @@ body {
 .footer-gradient {
     background-image: linear-gradient(to right, #667eea, #764ba2);
     position: relative;
-    height: 300px;
+    height: 250px;
     margin-top: -200px;
 }

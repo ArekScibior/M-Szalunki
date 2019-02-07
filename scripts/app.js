@@ -29,7 +29,7 @@ $(document).scroll(function() {
         $('.logo-text a').css('color', '#fff')
     } else {
         $(".header").addClass('fixed-header')    
-        $('.nav-main a').addClass('menu-gradient')
+        $('.nav-main a').css('color', '#000')
         $('.logo-text a').addClass('gradient-text')
     }
 });
