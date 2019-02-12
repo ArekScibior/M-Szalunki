@@ -423,8 +423,8 @@ body {
 
     .map {
         margin-top:20px !important;
-        width: 290px !important;
-        height: 250px !important;
+        width: 335px !important;
+        height: 280px !important;
     }
 
     .assortment-list .assortment-image img {
@@ -433,5 +433,6 @@ body {
 
     .footer-gradient {
         margin-top:0px;
+        height: 85px;
     }
 }
