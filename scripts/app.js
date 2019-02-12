@@ -37,7 +37,7 @@ $(document).scroll(function() {
 
 //set scroll slide
 $(".checkItButton").click(function() {
-    $("html, body").animate({ scrollTop: 720 }, "slow");
+    $("html, body").animate({ scrollTop: 608 }, "slow");
     return false;
 });
 
