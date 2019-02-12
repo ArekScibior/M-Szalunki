@@ -38,7 +38,7 @@ body {
     position: fixed; 
     top:150px;
     right: -40px;
-    z-index:20;
+    z-index:1111;
     border-bottom-left-radius:24px;
     border-top-left-radius:24px;
     border: 2px solid #fff;
@@ -306,3 +306,38 @@ body {
     height: 250px;
     margin-top: -200px;
 }
+
+@media only screen and (max-width: 600px) {
+    .price-gradient .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .assortment-gradient .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .assortment-gradient .container .row {
+        margin-right: 135px;
+    }
+
+    .contact-gradient .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-home .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-home .container .main-slogan {
+        margin-left: 40 px;
+    }
+  }
