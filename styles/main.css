@@ -417,7 +417,7 @@ body {
     .contact-gradient {
         height: 610px;
     }
-    .contact-gradient {
+    .contact-gradient, .price-gradient, .assortment-gradient {
         border-bottom-right-radius: 0px;
     }
 
