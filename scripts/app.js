@@ -16,6 +16,7 @@
     };
 })(jQuery);
 
+var stateNav = false;
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
@@ -37,11 +38,9 @@ $(document).scroll(function() {
     }
 });
 var scroll = function(y) {
-    if (y < 20) {
+    if (y < 20 && !stateNav) {
         $('.burger-nav span').removeAttr( 'style' );
         $(".header").removeClass('fixed-header')
-        $('.nav-main a').removeClass('menu-gradient')
-        $('.nav-main a').css('color', '#fff')
         $('.logo-text').css('color', '#fff')
         $('.logo-text a').removeClass('gradient-text')
         $('.logo-text a').css('color', '#fff')
@@ -49,6 +48,7 @@ var scroll = function(y) {
     } else {
         $(".header").addClass('fixed-header')    
         $('.burger-nav span').css('background-image', 'linear-gradient(to right, #42275a, #734b6d)')
+        $('.burger-list ul li a').addClass('gradient-text')
         $('.logo-text a').addClass('gradient-text')
         $('.main-slogan').css('margin-top', '210px')
     }
@@ -78,13 +78,16 @@ $(".checkItButton").click(function() {
 $(".home").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     $( ".nav-main" ).toggleClass('burger-list')
+    $('.burger-nav').toggleClass('open');
     return false;
 });
 
 $(".assortment").click(function() {
     $(".header").addClass('fixed-header')    
     $('.burger-nav').addClass('gradient-text')
+    $('.burger-nav').toggleClass('open');
     $('.logo-text a').addClass('gradient-text')
+
     if($( ".burger-list" ).length == 0) {
         $("html, body").animate({ scrollTop: 608 }, "slow");
     } else {
@@ -103,7 +106,9 @@ $(".assortment").click(function() {
 $(".price").click(function() {
     $(".header").addClass('fixed-header')    
     $('.burger-nav').addClass('gradient-text')
+    $('.burger-nav').toggleClass('open');
     $('.logo-text a').addClass('gradient-text')
+
     if($( ".burger-list" ).length == 0) {
         $("html, body").animate({ scrollTop: 1471 }, "slow");
     } else {
@@ -117,7 +122,9 @@ $(".price").click(function() {
 $(".contact").click(function() {
     $(".header").addClass('fixed-header')    
     $('.burger-nav').addClass('gradient-text')
+    $('.burger-nav').toggleClass('open');
     $('.logo-text a').addClass('gradient-text')
+
     if($( ".burger-list" ).length == 0) {
         $("html, body").animate({ scrollTop: 2154 }, "slow");
     } else {
@@ -132,6 +139,12 @@ $(".contact").click(function() {
 
 //toogle burger-nav
 $( ".burger-nav" ).click(function() {
+    $(".header").addClass('fixed-header')   
     $( ".nav-main" ).toggleClass('burger-list', 'slow')
-    $( ".burger-list ul li a" ).css('color', 'black')
+    $(this).toggleClass('open');
+    $('.burger-list ul li a').addClass('gradient-text')
+    $('.logo-text a').addClass('gradient-text')
+    $('.burger-nav span').css('background-image', 'linear-gradient(to right, #42275a, #734b6d)')
+    $('.main-slogan').css('margin-top', '170px')
+    stateNav = !stateNav;
 }) 
