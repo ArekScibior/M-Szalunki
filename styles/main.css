@@ -124,6 +124,10 @@ body {
     transform: scale(1.2);
 }
 
+.burger-nav {
+    display: none;
+}
+
 /*---------------------------------------------*/
 /* about */
 /*---------------------------------------------*/
@@ -354,16 +358,45 @@ body {
     body {
         min-width: 321px;
     }
+
     .header, .header .container{
         display:flex;
-        justify-content: center;
+        /* justify-content: center; */
+    }
+    .nav-main {
+        display: none; 
+    }
+
+    .burger-nav {
+        display:block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        color: #fff;
+    }
+
+    .burger-list {
+        position: absolute;
+        top:70px;
+        left: 0;
+        display: block;
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 98%;
+        background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+    }
+    .burger-list ul li {
+        margin-right: 20px;
+        display: block;
+        border-bottom: 1px solid black;
+    }
+
+    .burger-list ul li a {
+        color: black;
     }
 
     .logo-text {
         width: 100%;
-    }
-    .nav-main {
-        display: none; 
     }
 
     #home-page {

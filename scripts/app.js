@@ -39,16 +39,19 @@ $(document).scroll(function() {
 //set scroll slide
 $(".checkItButton").click(function() {
     $("html, body").animate({ scrollTop: 608 }, "slow");
+    $( ".nav-main" ).removeClass('burger-list')
     return false;
 });
 
 $(".home").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
+    $( ".nav-main" ).removeClass('burger-list')
     return false;
 });
 
 $(".assortment").click(function() {
     $("html, body").animate({ scrollTop: 608 }, "slow");
+    $( ".nav-main" ).removeClass('burger-list')
     return false;
 });
 // $(".assortment").click(function() {
@@ -58,12 +61,19 @@ $(".assortment").click(function() {
 
 $(".price").click(function() {
     $("html, body").animate({ scrollTop: 1471 }, "slow");
+    $( ".nav-main" ).removeClass('burger-list')
     return false;
 });
 
 $(".contact").click(function() {
     $("html, body").animate({ scrollTop: 2154 }, "slow");
+    $( ".nav-main" ).removeClass('burger-list')
     return false;
 });
 
 // end of set scroll slide
+
+//toogle burger-nav
+$( ".burger-nav" ).click(function() {
+    $( ".nav-main" ).toggleClass('burger-list', 'slow')
+}) 
