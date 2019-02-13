@@ -38,17 +38,17 @@ $(document).scroll(function() {
 });
 var scroll = function(y) {
     if (y < 20) {
+        $('.burger-nav span').removeAttr( 'style' );
         $(".header").removeClass('fixed-header')
         $('.nav-main a').removeClass('menu-gradient')
         $('.nav-main a').css('color', '#fff')
         $('.logo-text').css('color', '#fff')
         $('.logo-text a').removeClass('gradient-text')
         $('.logo-text a').css('color', '#fff')
-        $('.burger-nav').removeClass('gradient-text')
         $('.main-slogan').css('margin-top', '110px')
     } else {
         $(".header").addClass('fixed-header')    
-        $('.burger-nav').addClass('gradient-text')
+        $('.burger-nav span').css('background-image', 'linear-gradient(to right, #42275a, #734b6d)')
         $('.logo-text a').addClass('gradient-text')
         $('.main-slogan').css('margin-top', '210px')
     }

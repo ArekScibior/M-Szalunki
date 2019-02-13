@@ -368,11 +368,22 @@ body {
     }
 
     .burger-nav {
-        display:block;
+        margin: 0;
+        padding: 19px 16px;
+        display: inline-block;
         position: absolute;
-        top: 0;
-        right: 25px;
-        color: #fff;
+        top: 10px;
+        right: 10px;
+    }
+    .burger-nav span {
+        width: 40px;
+        background-color: #fff;
+        height: 5px;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .burger-nav span:last-child {
+        margin-bottom:0px;
     }
 
     .burger-list {
