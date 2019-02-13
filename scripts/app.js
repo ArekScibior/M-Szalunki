@@ -41,8 +41,9 @@ $(".checkItButton").click(function() {
     if($( ".burger-list" ).length == 0) {
         $("html, body").animate({ scrollTop: 608 }, "slow");
     } else {
-        $("html, body").animate({ scrollTop: 222222222222 }, "slow");
+        $("html, body").animate({ scrollTop: 1200 }, "slow");
         $( ".nav-main" ).toggleClass('burger-list')
+        $( ".burger-list ul li a" ).css('color', 'black')
     }
     return false;
 });
@@ -59,6 +60,7 @@ $(".assortment").click(function() {
     } else {
         $("html, body").animate({ scrollTop: 790 }, "slow");
         $( ".nav-main" ).toggleClass('burger-list')
+        $( ".burger-list ul li a" ).css('color', 'black')
     }
     
     return false;
@@ -74,6 +76,7 @@ $(".price").click(function() {
     } else {
         $("html, body").animate({ scrollTop: 1700 }, "slow");
         $( ".nav-main" ).toggleClass('burger-list')
+        $( ".burger-list ul li a" ).css('color', 'black')
     }
     return false;
 });
@@ -84,6 +87,7 @@ $(".contact").click(function() {
     } else {
         $("html, body").animate({ scrollTop: 3000 }, "slow");
         $( ".nav-main" ).toggleClass('burger-list')
+        $( ".burger-list ul li a" ).css('color', 'black')
     }
     return false;
 });
@@ -93,4 +97,5 @@ $(".contact").click(function() {
 //toogle burger-nav
 $( ".burger-nav" ).click(function() {
     $( ".nav-main" ).toggleClass('burger-list', 'slow')
+    $( ".burger-list ul li a" ).css('color', 'black')
 }) 
