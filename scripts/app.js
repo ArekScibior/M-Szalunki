@@ -19,9 +19,10 @@
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
-    console.log('y',y)
+    //console.log('y',y)
     //adding class header-fixed on scroll
     if (y < 35) {
+        $('.main-slogan').css('margin-top', '110px')
         $(".header").removeClass('fixed-header')
         $('.nav-main a').removeClass('menu-gradient')
         $('.nav-main a').css('color', '#fff')
@@ -29,6 +30,7 @@ $(document).scroll(function() {
         $('.logo-text a').removeClass('gradient-text')
         $('.logo-text a').css('color', '#fff')
     } else {
+        $('.main-slogan').css('margin-top', '170px')
         $(".header").addClass('fixed-header')    
         $('.nav-main a').css('color', '#000')
         $('.logo-text a').addClass('gradient-text')
@@ -43,15 +45,17 @@ var scroll = function(y) {
         $('.logo-text a').removeClass('gradient-text')
         $('.logo-text a').css('color', '#fff')
         $('.burger-nav').removeClass('gradient-text')
+        $('.main-slogan').css('margin-top', '110px')
     } else {
         $(".header").addClass('fixed-header')    
         $('.burger-nav').addClass('gradient-text')
         $('.logo-text a').addClass('gradient-text')
+        $('.main-slogan').css('margin-top', '210px')
     }
 }
 $('body').bind('touchmove', function(e) { 
     var y = $(this).scrollTop(); // Replace this with your code.
-    console.log('y', y)
+    //console.log('y', y)
     scroll(y)
 });
 
