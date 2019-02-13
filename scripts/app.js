@@ -19,6 +19,7 @@
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
+    //console.log('y',y)
     //adding class header-fixed on scroll
     if (y < 35) {
         $(".header").removeClass('fixed-header')
@@ -61,7 +62,7 @@ $(".price").click(function() {
 });
 
 $(".contact").click(function() {
-    $("html, body").animate({ scrollTop: 2233 }, "slow");
+    $("html, body").animate({ scrollTop: 2154 }, "slow");
     return false;
 });
 
